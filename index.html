@@ -88,36 +88,109 @@
     ol li {
       margin-bottom: 1rem;
     }
+    .core-point {
+      font-weight: bold;
+      color: #388E3C;
+    }
+    .function-group {
+      margin-bottom: 1.5rem;
+    }
+    .function-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .function-icon {
+      margin-right: 0.5rem;
+      font-size: 1.2em;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>胰岛素与人体健康</h1>
-    <p>控制血糖，储存能量，影响全身健康</p>
+    <p>"代谢调控的核心激素"——调节血糖、能量储存与代谢平衡的关键物质</p>
   </header>
   <main>
     <h2>🧬 一、胰岛素的生理作用</h2>
-    <ul>
-      <li>🍚 <strong>调节血糖：</strong> 吃东西 → 血糖↑ → 胰岛素↑ → 细胞吸收葡萄糖 → 血糖↓，能量↑ 或 糖原↑<span class="tag">降糖激素</span></li>
-      <li>🧈 <strong>促进脂肪储存：</strong> 抑制脂肪分解、促进脂肪合成，减少游离脂肪酸释放 <span class="tag">储脂激素</span></li>
-      <li>💪 <strong>促进肌肉合成：</strong> ↑ 氨基酸进入细胞 → 合成蛋白质 → 肌肉生长和修复</li>
-    </ul>
+    
+    <div class="function-group">
+      <div class="function-title"><span class="function-icon">🍚</span> 血糖调节</div>
+      <ul class="sub-list">
+        <li><span class="core-point">"降糖激素"的核心作用</span>，促进葡萄糖进入细胞 → 降低血糖水平</li>
+        <li>进食后胰腺β细胞分泌 → 促进肝脏、肌肉和脂肪细胞摄取葡萄糖 <span class="tag">胰腺β细胞</span></li>
+        <li>抑制肝糖原分解，促进糖原合成 <span class="tag">糖代谢</span></li>
+      </ul>
+    </div>
+    
+    <div class="function-group">
+      <div class="function-title"><span class="function-icon">🧈</span> 脂肪代谢</div>
+      <ul class="sub-list">
+        <li><span class="core-point">促进脂肪合成与储存</span>（脂肪细胞中）</li>
+        <li>抑制脂肪分解 → 减少游离脂肪酸释放</li>
+        <li>高胰岛素水平与中心性肥胖密切相关 <span class="tag">脂代谢</span></li>
+      </ul>
+    </div>
+    
+    <div class="function-group">
+      <div class="function-title"><span class="function-icon">💪</span> 蛋白质代谢</div>
+      <ul class="sub-list">
+        <li>促进氨基酸进入细胞 → 增加蛋白质合成</li>
+        <li><span class="core-point">抑制蛋白质分解</span> → 维持肌肉质量</li>
+        <li>与生长激素协同促进生长发育</li>
+      </ul>
+    </div>
+    
+    <div class="function-group">
+      <div class="function-title"><span class="function-icon">🧠</span> 大脑功能</div>
+      <ul class="sub-list">
+        <li><span class="core-point">调节脑内葡萄糖利用</span></li>
+        <li>影响认知功能和食欲调节中枢</li>
+        <li>胰岛素抵抗与阿尔茨海默病风险相关 <span class="tag">脑代谢</span></li>
+      </ul>
+    </div>
+    
+    <div class="function-group">
+      <div class="function-title"><span class="function-icon">⚖️</span> 代谢平衡</div>
+      <ul class="sub-list">
+        <li>与胰高血糖素拮抗 → 维持血糖稳定</li>
+        <li>调节电解质平衡（促进钾离子进入细胞）</li>
+        <li>影响多种激素的分泌和作用</li>
+      </ul>
+    </div>
+
+    <div class="highlight" style="padding:1rem; margin:1.5rem 0; border-radius:4px; background-color:#E8F5E9;">
+      <strong>🧠 核心总结：</strong> 胰岛素是一种"代谢调控的核心激素"，同时作为：
+      <ul style="margin-top:0.5rem;">
+        <li>血糖调节的主要执行者（促进葡萄糖利用）</li>
+        <li>脂肪储存的关键促进因素（抑制脂肪分解）</li>
+        <li>蛋白质合成的辅助因子（促进肌肉生长）</li>
+        <li>大脑能量代谢的调节者</li>
+        <li>全身代谢平衡的协调者</li>
+      </ul>
+    </div>
 
     <h2>⚠️ 二、胰岛素异常对健康的影响</h2>
     <ul>
-      <li>🚨 <strong>胰岛素不足</strong> ➜ <span class="tag">1型糖尿病</span>：β细胞被破坏 → 胰岛素缺乏 → 血糖进不去细胞 → 虽然血糖飙升，但细胞“饿着” → 只能分解脂肪供能 → 酮体↑ → 酮症酸中毒</li>
-      <li>📉 <strong>胰岛素抵抗</strong> ➜ <span class="tag">2型糖尿病 / 肥胖</span>：
+      <li>📉 <strong>胰岛素不足</strong> ➜ <span class="tag">1型糖尿病</span>：
         <ul class="sub-list">
-          <li>细胞对胰岛素反应迟钝 → 胰腺分泌更多胰岛素</li>
-          <li>长期高胰岛素 ➜ 脂肪堆积（尤其是腹部）</li>
-          <li>初期为 <span class="highlight">高胰岛素血症</span>，但长期胰岛β细胞功能下降 ➜ 胰岛素相对不足</li>
-          <li>引发 <span class="highlight">高血压、高血脂、代谢综合征</span>，心血管风险↑</li>
-          <li>长期高胰岛素 👉 代谢失衡 👉 最终可能发展为2型糖尿病</li>
+          <li><span class="core-point">β细胞破坏</span> → 胰岛素绝对缺乏</li>
+          <li><span class="core-point">症状：</span>多饮、多尿、体重下降、酮症酸中毒</li>
+          <li><span class="core-point">治疗：</span>必须外源性胰岛素替代治疗</li>
+        </ul>
+      </li>
+      <li>📈 <strong>胰岛素抵抗</strong> ➜ <span class="tag">2型糖尿病</span> / <span class="tag">代谢综合征</span>：
+        <ul class="sub-list">
+          <li>细胞对胰岛素反应下降 → 代偿性高胰岛素血症</li>
+          <li><span class="core-point">危险因素：</span>肥胖、缺乏运动、遗传、年龄</li>
+          <li><span class="core-point">后果：</span>血糖升高、血脂异常、高血压、心血管风险增加</li>
+          <li><span class="core-point">治疗：</span>生活方式干预 + 胰岛素增敏剂</li>
         </ul>
       </li>
     </ul>
 
-    <h2>💡 三、如何保持胰岛素健康？</h2>
+    <h2>💡 三、如何维持健康胰岛素水平？</h2>
     <table>
       <thead>
         <tr>
@@ -127,59 +200,57 @@
       </thead>
       <tbody>
         <tr>
-          <td>🍠 控制碳水摄入</td>
-          <td>减少血糖波动，降低胰岛素分泌负担（建议选择低GI碳水）</td>
+          <td>🥗 均衡饮食</td>
+          <td>低GI饮食减少血糖波动，减轻胰岛素负担（Diabetes Care 2008）</td>
         </tr>
         <tr>
-          <td>🏃 增加运动</td>
-          <td>提高细胞对胰岛素的敏感度（结合有氧与抗阻训练效果最佳）</td>
+          <td>🏃 规律运动</td>
+          <td>提高胰岛素敏感性，减少胰岛素抵抗（Med Sci Sports Exerc 2013）</td>
         </tr>
         <tr>
-          <td>🛌 保持良好睡眠</td>
-          <td>睡眠不足干扰激素平衡，增加胰岛素抵抗</td>
+          <td>⚖️ 控制体重</td>
+          <td>减少内脏脂肪可显著改善胰岛素敏感性（Obesity 2007）</td>
         </tr>
         <tr>
-          <td>🧘 管理压力</td>
-          <td>压力使皮质醇↑，影响胰岛素功能（推荐冥想、深呼吸等减压方式）</td>
+          <td>🛌 充足睡眠</td>
+          <td>睡眠不足会导致胰岛素抵抗（Ann Intern Med 2010）</td>
         </tr>
         <tr>
-          <td>🚶 避免久坐</td>
-          <td>久坐降低代谢率，每小时起身活动5分钟有助于降低胰岛素抵抗</td>
+          <td>🧘 压力管理</td>
+          <td>慢性压力升高皮质醇，干扰胰岛素功能（Psychoneuroendocrinology 2011）</td>
         </tr>
         <tr>
-          <td>⚖ 控制体重，尤其是腹部脂肪</td>
-          <td>腹部肥胖是代谢病的“红灯”信号</td>
+          <td>🚶 减少久坐</td>
+          <td>每小时站立/活动5分钟可改善胰岛素敏感性（Diabetologia 2012）</td>
+        </tr>
+        <tr>
+          <td>🩸 定期检测</td>
+          <td>监测空腹胰岛素和血糖，早期发现胰岛素抵抗</td>
         </tr>
       </tbody>
     </table>
 
-    <h2>📚 参考文献</h2>
+    <h2>📚 四、参考文献</h2>
     <ol>
-      <li><strong>胰岛素调节血糖的生理作用</strong><br>
-        - Rorsman P, Ashcroft FM. "Pancreatic β-Cell Electrical Activity and Insulin Secretion: Of Mice and Men." <em>Physiol Rev.</em> 2018 Apr 1;98(1):117-214.<br>
-        - Guyton & Hall Textbook of Medical Physiology, 14th Edition, Chapter 87 - The Pancreas
+      <li><strong>胰岛素基础生理</strong><br>
+        - Rorsman P, Ashcroft FM. "Pancreatic β-Cell Electrical Activity and Insulin Secretion." Physiol Rev 2018.<br>
+        - Guyton & Hall Textbook of Medical Physiology, 14th Edition.
       </li>
-      <li><strong>胰岛素促进脂肪储存及代谢疾病中的角色</strong><br>
-        - Guilherme A, Virbasius JV, Puri V, Czech MP. "Adipocyte dysfunctions linking obesity to insulin resistance and type 2 diabetes." <em>Nat Rev Mol Cell Biol.</em> 2008 May;9(5):367-77.<br>
-        - Kahn BB, Flier JS. "Obesity and insulin resistance." <em>J Clin Invest.</em> 2000 Aug;106(4):473-81.
+      <li><strong>胰岛素与代谢疾病</strong><br>
+        - DeFronzo RA. "Pathogenesis of type 2 diabetes mellitus." Med Clin North Am 2004.<br>
+        - Saltiel AR, Kahn CR. "Insulin signalling and metabolism." Nature 2001.
       </li>
-      <li><strong>胰岛素抵抗与2型糖尿病机制</strong><br>
-        - DeFronzo RA. "Pathogenesis of type 2 diabetes mellitus." <em>Med Clin North Am.</em> 2004 Jul;88(4):787-835.<br>
-        - Saltiel AR, Kahn CR. "Insulin signalling and the regulation of glucose and lipid metabolism." <em>Nature.</em> 2001 Dec 13;414(6865):799-806.
+      <li><strong>胰岛素抵抗机制</strong><br>
+        - Guilherme A, et al. "Adipocyte dysfunctions linking obesity to insulin resistance." Nat Rev Mol Cell Biol 2008.
       </li>
-      <li><strong>胰岛素不足导致1型糖尿病及酮症酸中毒</strong><br>
-        - Atkinson MA, Eisenbarth GS. "Type 1 diabetes: new perspectives on disease pathogenesis and treatment." <em>Lancet.</em> 2001 Jul 14;358(9277):221-9.<br>
-        - Kitabchi AE, Umpierrez GE, Miles JM, Fisher JN. "Hyperglycemic crises in adult patients with diabetes." <em>Diabetes Care.</em> 2009 Jul;32(7):1335-43.
-      </li>
-      <li><strong>生活方式对胰岛素敏感性的影响（运动、饮食、睡眠）</strong><br>
-        - Colberg SR et al. "Physical Activity/Exercise and Diabetes: A Position Statement of the American Diabetes Association." <em>Diabetes Care.</em> 2016 Nov;39(11):2065-2079.<br>
-        - Boden G. "Obesity, insulin resistance and free fatty acids." <em>Curr Opin Endocrinol Diabetes Obes.</em> 2011 Apr;18(2):139-43.<br>
-        - Tasali E, Van Cauter E. "Sleep-disordered breathing and the current epidemic of obesity: consequence or contributor?" <em>Am J Respir Crit Care Med.</em> 2006 Jan 15;173(1):2-4.
+      <li><strong>生活方式干预</strong><br>
+        - Colberg SR et al. "Exercise and Diabetes." Diabetes Care 2016.<br>
+        - Boden G. "Obesity, insulin resistance and free fatty acids." Curr Opin Endocrinol Diabetes Obes 2011.
       </li>
     </ol>
   </main>
   <footer>
-    © 2025 胰岛素健康科普 ｜ 医学内容仅供参考
+    © 2025 胰岛素健康科普 | 医学内容仅供参考
   </footer>
 </body>
 </html>
